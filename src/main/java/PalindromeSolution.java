@@ -7,15 +7,18 @@ public class PalindromeSolution {
      * Solution based on bias of palindrome center and checking possibility of making palindrome each time.
      * @param s
      */
-    public void solution(String s){
+    public int solution(String s){
+        int result = 0;
 
         for (int bias = 0; bias < s.length(); bias++) {
             if(isPalindrome(s, bias)) {
                 System.out.println(bias);
+                result = bias;
                 break;
             }
         }
 
+        return result;
     }
 
     /**

@@ -12,7 +12,7 @@ public class MatrixSolution {
      * @param C columns quantity
      * @param M matrix
      */
-    public void solution(int R, int C, int[][]M){
+    public List<Integer> solution(int R, int C, int[][]M){
         List<Integer> vector = new ArrayList();
 
         int vectorsQuantity = R + C - 1;
@@ -73,6 +73,7 @@ public class MatrixSolution {
         }
 
         System.out.println(vector);
+        return vector;
     }
 
 
